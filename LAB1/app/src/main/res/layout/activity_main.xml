@@ -8,33 +8,33 @@
     <!-- Header -->
     <TextView
         android:id="@+id/header"
-        android:text="Item Search App"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="16dp" />
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Search ey muy mer!!"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <!-- Display box for item details -->
     <TextView
         android:id="@+id/item_display"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
         android:background="#EEEEEE"
-        android:text="Item details shown here"
         android:padding="12dp"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
+        android:text="Search items by id (1-10)"
+        android:textSize="16sp" />
 
     <!-- Input for ID -->
     <EditText
         android:id="@+id/input_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:hint="Enter item ID"
-        android:inputType="number"
-        android:layout_marginBottom="12dp" />
+        android:inputType="number" />
 
     <!-- Search button -->
     <Button
@@ -43,4 +43,34 @@
         android:layout_height="wrap_content"
         android:text="Search" />
 
+    <TextView
+        android:text="Another search"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/input_fake_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter id"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_fake_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/fake_api_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search items by id"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>
